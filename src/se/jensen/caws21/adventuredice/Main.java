@@ -7,21 +7,24 @@ public class Main {
     public static void main(String[] args) {
 
         intro();
-        menyVal();
-        String scanUser = menuChoice();
-        menyVal();
+        printMenu();
+        int scanUser = menuChoice();
+
+        //Looping through the menu
+        loopMenu();
+
     }
 
         public static void intro () {
             System.out.println("\n");
-            System.out.println("####----Hi and welcome to MovieDataBase---####");
+            System.out.println("####----Hi and welcome to MovieDataBase---#### \n");
             System.out.println("Please make a choice from the menu");
         }
 
         public static int menuChoice() {
             Scanner userInput = new Scanner (System.in);
             String scan = userInput.nextLine();
-            return scan;
+            return Integer.parseInt(scan);
         }
 
         public static void printMenu() {
@@ -33,12 +36,16 @@ public class Main {
 
         public static void loopMenu() {
         boolean runProgram = true;
-         while (true) {
+         while (runProgram) {
              printMenu();
              int userPickedOption = menuChoice();
          }
 
-         public static add
+         public static boolean switch() {
+
+            }
+
+
 
         }
 
